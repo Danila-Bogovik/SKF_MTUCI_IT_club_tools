@@ -14,7 +14,7 @@ def process_excel_file(file_path):
 
         with open(output_file_path, 'w', encoding='utf-8') as f:
             for index, row in df.iterrows():
-                line = f"{index + 1}. {row[1]}, {row[1].upper()}, {row[2]}"
+                line = f"{index + 1}. {row[1]}, {row[2].upper()}, {row[3]}"
                 f.write(line + '\n')
 
         print(f"Данные успешно сохранены в файл: {output_file_path}")
